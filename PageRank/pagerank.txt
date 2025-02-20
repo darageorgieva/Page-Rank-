@@ -1,0 +1,15 @@
+G.successors(node) - outgoing neighbours
+G.predecessors(node) - incoming neighbours
+so dangling nodes dont have succesors but they do have predecessors
+so danngling nodes dont have ougoing links but they have incoming 
+
+# Calculate backlinks for each node in the original graph G
+# This is done by finding the out-degree in the reversed graph G_reversed,
+# because the outlinks in G_reversed correspond to the backlinks (incoming links)
+# in the original graph G.
+branching = np.array([G_reversed.out_degree(node) for node in G_reversed.nodes])
+
+# Calculate outlinks for each node in the original graph G
+# This is done by finding the in-degree in the reversed graph G_reversed,
+# because the inlinks in G_reversed correspond to the outlinks in the original graph G.
+branching1 = np.array([G_reversed.in_degree(node) for node in G.nodes])
