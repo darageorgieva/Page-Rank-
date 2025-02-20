@@ -13,10 +13,6 @@ This project implements the **PageRank algorithm**, a ranking system used by Goo
 - **Source Code:** Python code for both the random surfer simulation and PageRank computation.
 - **Results:** Output of the top 10 most visited nodes from the random surfer and the top 10 highest ranking nodes from the PageRank algorithm.
 - **Convergence Data:** Number of iterations required for the PageRank algorithm to stabilize.
-- **PDF Submission:** A PDF containing:
-  - Solution to the diagonalization exercise.
-  - Theoretical explanation of the PageRank algorithm.
-  - Results for the Gnutella graph.
 
 ## Getting Started
 
