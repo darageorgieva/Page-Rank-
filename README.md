@@ -49,17 +49,37 @@ The script computes the importance scores of the nodes in the graph using the Pa
 - **Top 10 nodes with the highest importance scores.**
 - **The number of iterations required for the PageRank algorithm to stabilize.**
 
-### Example Output
+### My Output
 
-```yaml
-Top 10 Most Visited Nodes (Random Surfer Simulation):
-1. Node 45: 500 visits
-2. Node 12: 490 visits
-...
+Results for the Gnutella graph:
+Results from Page Rank:
+This took 9 iterations.
+Importance vector after 9 iterations is [0.00010058 0.00010913 0.000171 ... 0.00011186 0.00011186 0.00011186]
+#1: Node 367 - Score: 0.002387650830015758
+#2: Node 249 - Score: 0.0021842951424048836
+#3: Node 145 - Score: 0.0020548859393247436
+#4: Node 264 - Score: 0.001998749916194164
+#5: Node 266 - Score: 0.0019634403057468266
+#6: Node 123 - Score: 0.0018634931279900315
+#7: Node 127 - Score: 0.0018605110789676085
+#8: Node 122 - Score: 0.0018532460701586075
+#9: Node 1317 - Score: 0.001843504657081592
+#10: Node 5 - Score: 0.001831073888467343
+Results from Random Surfer:
+#1: Node 367 - Visits: 11995
+#2: Node 249 - Visits: 10795
+#3: Node 264 - Visits: 10212
+#4: Node 145 - Visits: 10160
+#5: Node 266 - Visits: 9853
+#6: Node 123 - Visits: 9406
+#7: Node 1317 - Visits: 9391
+#8: Node 127 - Visits: 9377
+#9: Node 122 - Visits: 9247
+#10: Node 5 - Visits: 9074
 
-Top 10 Highest Ranking Nodes (PageRank Algorithm):
-1. Node 45: 0.12
-2. Node 12: 0.11
-...
+## Conclusion:
 
-Number of Iterations for PageRank to Stabilize: 35
+*   The experiment demonstrates that while the **Random Surfer model** can provide an approximation of node importance based on visit frequency, the **PageRank algorithm** is a much more accurate and stable method for ranking nodes. PageRank accounts for the **link structure**, the **influence** of other nodes, and converges to a stable set of importance scores after just a few iterations.
+  
+*   The **PageRank algorithm** delivers **mathematically rigorous** and **reliable rankings**, which is why it is employed by systems like Google for web page ranking.
+
